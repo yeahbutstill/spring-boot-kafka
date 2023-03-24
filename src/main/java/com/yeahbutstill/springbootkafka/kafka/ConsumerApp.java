@@ -56,7 +56,7 @@ public class ConsumerApp {
     }
 
     public static void main(String[] args) {
-        new ConsumerApp("ICS_ECORR_NDAPPROVAL", "ICS").run();
+        new ConsumerApp("ICS-ECORR-NDAPPROVAL", "ICS").run();
     }
 
 }

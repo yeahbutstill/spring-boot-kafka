@@ -56,7 +56,7 @@ public class ProducerApp {
     }
 
     public static void main(String[] args) throws IOException {
-        new ProducerApp("ICS_ECORR_NDAPPROVAL").run();
+        new ProducerApp("ICS-ECORR-NDAPPROVAL").run();
 
         System.in.read();
     }
