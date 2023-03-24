@@ -30,7 +30,7 @@ public class ProducerApp {
     private void setUpProperties() {
         properties = new Properties();
         properties.setProperty(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
-        properties.put("linger.ms", 1);
+        properties.put(ProducerConfig.LINGER_MS_CONFIG, 1);
         properties.setProperty(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
         properties.setProperty(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
         properties.setProperty(ProducerConfig.ACKS_CONFIG, "0");
@@ -56,7 +56,7 @@ public class ProducerApp {
     }
 
     public static void main(String[] args) throws IOException {
-        new ProducerApp("topic-java-lagi").run();
+        new ProducerApp("ICS_ECORR_NDAPPROVAL").run();
 
         System.in.read();
     }
